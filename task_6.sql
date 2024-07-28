@@ -15,7 +15,7 @@ SET @address_2 = '125 Happiness  Ave.';
 SET @customer_id_3 = 4;
 SET @customer_name_3 = 'Nehemial Kamolu';
 SET @email_3 = 'nkamolu@sandtech.com';
-SET @address_3 = '126 Happiness  Ave';
+SET @address_3 = '126 Happiness  Ave.';
 
 -- Insert the rows
 INSERT INTO customer (customer_id, customer_name, email, address)
