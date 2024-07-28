@@ -10,5 +10,5 @@ SELECT CONCAT(
     "Column_default: ", COLUMN_DEFAULT, "\n",
     "Extra: ", COLUMN_TYPE, "\n\n"
 ) AS stmt
-FROM information_schema.columns
-WHERE table_name = 'books' AND table_schema = DATABASE();
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'Books' AND TABLE_SCHEMA = 'alx_book_store';
