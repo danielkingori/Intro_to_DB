@@ -8,8 +8,8 @@ SET @email = 'cbaidoo@sandtech.com';
 SET @address = '123 Happiness Ave.';
 
 -- Insert the row
-INSERT INTO Customers (customer_id, customer_name, email, address)
+INSERT INTO customer (customer_id, customer_name, email, address)
 VALUES (@customer_id, @customer_name, @email, @address);
 
 -- Print the inserted row
-SELECT * FROM Customers WHERE customer_id = @customer_id;
+SELECT * FROM customer WHERE customer_id = @customer_id;
