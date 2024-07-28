@@ -30,8 +30,7 @@ order_date DATE
 CREATE TABLE Order_Details(
 orderdetailid (Primary Key)
 order_id (Foreign Key referencing Orders table)
-book_id (Foreign Key referencing Books table)
-quantity DOUBLE
+book_id INT 
+FOREIGN KEY (order_id) REFERENCES Orders(order_id)
+FOREIGN KEY (book_id) REFERENCES Books(book_id)
 );
-
-["order_id INT", "customer_id INT", "FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)"]
