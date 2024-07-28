@@ -9,7 +9,7 @@ publication_date DATE
 );
 
 CREATE TABLE Authors (
-author_id (Primary Key)
+author_id (PRIMARY KEY)
 author_name VARCHAR(215)
 );
 
