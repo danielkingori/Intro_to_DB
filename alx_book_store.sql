@@ -21,8 +21,9 @@ address TEXT
 );
 
 CREATE TABLE Orders (
-order_id (Primary Key)
-customer_id (Foreign Key referencing Customers table)
+order_id INT (Primary Key)
+customer_id INT
+FOREIGN KEY (customer_id) REFERENCES Customers table (customer_id)
 order_date DATE
 );
 
@@ -32,3 +33,5 @@ order_id (Foreign Key referencing Orders table)
 book_id (Foreign Key referencing Books table)
 quantity DOUBLE
 );
+
+["order_id INT", "customer_id INT", "FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)"]
